@@ -5,8 +5,8 @@ class ShapeCalculator {
 //    Circle circle = new Circle();
 //    Triangle triangle = new Triangle();
 
-    double squareArea(Square square) {
-        return square.a * 2;
+    int squareArea(Square square) {
+        return square.a * square.a;
     }
     double circleArea(Circle circle){
         return circle.ray * 3.14 * 2;
@@ -14,8 +14,7 @@ class ShapeCalculator {
     double trianglePerimeter(Triangle triangle){
         return triangle.a + triangle.b + triangle.c;
     }
-
     double rectPerimeter(Rectangle rectangle){
-         return rectangle.a + rectangle.b;
+         return 2*rectangle.a + 2*rectangle.b;
     }
 }

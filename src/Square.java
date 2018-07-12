@@ -1,5 +1,8 @@
 class Square {
 
-  int a = 5;
+  int a;
 
+  Square(int bok){
+    a = bok;
+  }
 }
