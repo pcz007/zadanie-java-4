@@ -4,24 +4,22 @@ public class Device {
     String producer;
     String type;
     double price;
-    String info;
 
-    Device(String cd, String pr, String tp, double prc){
-        this.code = cd;
-        this.producer = pr;
-        this.type = tp;
-        this.price = prc;
+
+    Device(String code, String producer, String type) {
+        this.code = code;
+        this.producer = producer;
+        this.type = type;
     }
 
-    Device(String cd, String pr, String tp){
-        this.code = cd;
-        this.producer = pr;
-        this.type = tp;
+    Device(String code, String producer, String type, double price) {
+        this(code, producer, type);
+        this.price = price;
     }
 
-    void getInfo(){
-         System.out.println("Kod: " + code + ", producent: " + producer + ", typ: " + type +
-            ", cena: " + price);
+    void getInfo() {
+        System.out.println("Kod: " + code + ", producent: " + producer + ", typ: " + type +
+                ", cena: " + price);
     }
 
 }
